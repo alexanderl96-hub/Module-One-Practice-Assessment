@@ -8,6 +8,13 @@
  *
  */
 
-function howManyTargets() {}
+function howManyTargets(arr, target) {
+    let countTarg = 0
+    for(let i = 0; i <= arr.length; i++){
+        if(arr[i] === target ){
+            countTarg += 1
+        }
+    }return countTarg
+}
 
 module.exports = howManyTargets;

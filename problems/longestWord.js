@@ -8,6 +8,14 @@
  * returns "hello"
  */
 
-function longestWord() {}
-
+function longestWord(words) {
+    let newWord = "";
+    for(let i = 0;i < words.length; i++) {
+        if(i > words[i]) {
+            newWord += 1
+        }
+    }
+    return newWord
+}
+console.log(longestWord("cat", "bird", "hello", "corey", "do"))
 module.exports = longestWord;

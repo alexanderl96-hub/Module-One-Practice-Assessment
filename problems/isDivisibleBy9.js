@@ -8,6 +8,16 @@
  *
  */
 
-function isDivisibleBy9() {}
+function isDivisibleBy9(num) {
+    if(num !==0 && num % 9 === 0){
+        return true
+    }else {
+        return false
+    }
+       
+    
+        
+    
+}
 
 module.exports = isDivisibleBy9;

@@ -8,6 +8,12 @@
  *  
  */
 
-function numberIncludes0() {}
+function numberIncludes0(num) {
+   if(num === 0 && num !==0) {
+       return true
+   }else{
+       return false
+   }
+}
 
 module.exports = numberIncludes0;
