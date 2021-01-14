@@ -9,7 +9,8 @@
  */
 
 function numberIncludes0(num) {
-   if(num === 0 && num !==0) {
+    let string = num.toString()
+   if(string.includes(0) ) {
        return true
    }else{
        return false

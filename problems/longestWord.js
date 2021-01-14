@@ -11,11 +11,11 @@
 function longestWord(words) {
     let newWord = "";
     for(let i = 0;i < words.length; i++) {
-        if(i > words[i]) {
-            newWord += 1
+        if(words[0].length < words[i].length && newWord.length < words[i].length) {
+            newWord = words[i]
         }
     }
     return newWord
 }
-console.log(longestWord("cat", "bird", "hello", "corey", "do"))
+
 module.exports = longestWord;

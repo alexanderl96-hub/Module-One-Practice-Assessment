@@ -7,16 +7,21 @@
  *
  */
 
-function letterCount(str, i) {
-let obj = {}
-for(let i = 0; i <str.length;i++ ){
-    if(str[i] !== " " && obj[str[i].toLowerCase()] === undefined && obj[str[i].toUpperCase()] === obj[str[i].toLowerCase()] ){
-        obj[str[i].toLowerCase()] = 1
-    }else{
-        obj[str[i].toLowerCase()] += 1
-    }
-}return obj
+function letterCount(str) {
+    let obj = {}
+    for (let i = 0; i < str.length; i += 1) {
+        let obj1 =str[i].toLowerCase()
+        if( obj1 === " "){
+
+        }else if(obj.hasOwnProperty(obj1)){
+            obj[obj1] +=1
+        }else{
+            obj[obj1]=1
+        }
+    }return obj
+   
 }
-
-
+          
+          
+    
 module.exports = letterCount;
